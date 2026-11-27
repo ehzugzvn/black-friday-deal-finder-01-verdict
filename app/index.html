@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verdict — Black Friday Deal Finder</title>
+<meta name="description" content="Real Black Friday 2026 deals, checked 27 Nov 2026, each with a verdict: new low, strong, or routine.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f5b301'/%3E%3Cpath d='M8 17l5 5 11-12' stroke='%23101c33' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true">✓</span>
+    <div>
+      <h1>VERDICT<span class="dot">.</span></h1>
+      <p class="tagline">Black Friday deals, checked — is it really a deal?</p>
+    </div>
+  </div>
+  <p class="checked-line">All 35 prices checked <strong>27 Nov 2026, 20:30 WITA (12:30 UTC)</strong> at the store or a deals source naming the store. Prices move — confirm at checkout.</p>
+</header>
+
+<section class="verdict-key" aria-label="How verdicts work">
+  <div class="key-item new-low"><span class="badge new-low">NEW LOW</span><span>Lowest price ever tracked for this product.</span></div>
+  <div class="key-item strong"><span class="badge strong">STRONG</span><span>Clearly below the recent usual price.</span></div>
+  <div class="key-item routine"><span class="badge routine">ROUTINE</span><span>Small cut, or a price that was raised first.</span></div>
+</section>
+
+<section class="controls" aria-label="Search and filters">
+  <label class="search-box">Search deals
+    <input id="search" type="search" placeholder="Try “AirPods”, “TV”, “Dyson”…" autocomplete="off">
+  </label>
+  <label>Category
+    <select id="category">
+      <option value="">All categories</option>
+      <option>Audio</option>
+      <option>Laptops</option>
+      <option>TVs</option>
+      <option>Gaming</option>
+      <option>Wearables</option>
+      <option>Tablets</option>
+      <option>Home &amp; Kitchen</option>
+    </select>
+  </label>
+  <label>Store
+    <select id="store">
+      <option value="">All stores</option>
+      <option>Amazon</option>
+      <option>Best Buy</option>
+      <option>Walmart</option>
+      <option>Target</option>
+      <option>Dell</option>
+    </select>
+  </label>
+  <label>Discount
+    <select id="discount">
+      <option value="0">Any discount</option>
+      <option value="25">25% off or more</option>
+      <option value="40">40% off or more</option>
+      <option value="50">50% off or more</option>
+    </select>
+  </label>
+  <label>Sort by
+    <select id="sort">
+      <option value="score">Best deal first (score)</option>
+      <option value="discount">Biggest % off</option>
+      <option value="price-asc">Lowest price</option>
+      <option value="price-desc">Highest price</option>
+      <option value="save">Most dollars saved</option>
+    </select>
+  </label>
+</section>
+
+<p class="count" id="count" aria-live="polite"></p>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No deals match that search. Try a different word or clear a filter.</p>
+</main>
+
+<section class="compare" id="compare" aria-label="Same product, different stores">
+  <h2>Same product, different stores</h2>
+  <p>AirPods Pro 3: <strong>Amazon $149.00</strong> · <strong>Target $149.99</strong> · Best Buy $179.99 — Amazon wins by 99¢. Sony WH-1000XM5: <strong>Best Buy $169.99</strong> is the lowest tracked price anywhere this week.</p>
+</section>
+
+<footer>
+  <p>Verdict is an independent deal finder. Prices were read on 27 Nov 2026 from each store's own listing or a deals source naming the store; the source is shown on every card. “Usual price” is the store's list or reference price at check time. A NEW LOW verdict means a price tracker or deals source confirmed it as the lowest price ever tracked — otherwise the card says STRONG or ROUTINE with its evidence. Store links open the product search at that store.</p>
+  <p>Black Friday 27 Nov 2026 · Cyber Monday 30 Nov 2026 · 35 deals · 5 stores · 7 categories</p>
+</footer>
+</body>
+</html>
